@@ -73,6 +73,7 @@ setup_page_tables:
     or eax, 0b11 ;present & writeable flags
     mov [page_table_l3], eax
 
+
     mov ecx, 0 ; brojac
 
 .loop:
@@ -119,8 +120,8 @@ page_table_l4:
 page_table_l3:
     resb 4096
 page_table_l2:
-
     resb 4096
+
 stack_bottom:
     resb 4096 * 4
 

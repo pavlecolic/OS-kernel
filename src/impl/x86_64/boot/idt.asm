@@ -42,9 +42,6 @@ isr1:
     iretq
     GLOBAL isr1
 
-
- 
-
 load_idt:
     lidt[idtDescriptor]
     sti
